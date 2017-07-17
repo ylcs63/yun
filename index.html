@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aken · 电影·图书查询</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/wap.css">
+    <style>
+      
+        #topbgc {
+            height: 186px;
+            background: url(./images/bg1-xiatian.jpg);
+        }
+        .container {
+             background: linear-gradient(to right bottom,skyblue, dodgerblue);  
+        }
+        .container img{
+            width: 100%;
+            height: auto;
+        }
+        .footer{
+            background-color: bisque;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航栏开始 -->
+    <div id="topbgc"></div>
+    <div class="top">
+        <div class="header">
+            <div class="search">
+                <input class="my-input" type="text" placeholder="电影搜索">
+                <button>搜索</button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <!--li中添加 active 类样式，显示焦点状态。-->
+                <li class="active"><a href="#/home">首页</a></li>
+                <li><a href="#/in_theaters">正在热映</a></li>
+                <li><a href="#/coming_soon">即将上映</a></li>
+                <li><a href="#/top250">Top250</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 顶部导航栏结束 -->
+    <div class="container">
+        <img src="./images/017.jpg" alt="">
+    </div>
+    <footer class="footer">
+        <div class="">
+            <p>纯属测试使用，不用于商业用途.. </p>
+        </div>
+    </footer>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <script>
+        var url = "https://api.douban.com/v2/";
+    </script>
+</body>
+
+</html>
